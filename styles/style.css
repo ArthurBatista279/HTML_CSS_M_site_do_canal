@@ -30,27 +30,22 @@ body {
 }
 
 #cabeçalho nav a {
-    color: white;
+    color: #f5f5f5;
     text-decoration: none;
     margin-left: 15px;
     transition: color 0.3s ease;
 }
 
 #cabeçalho nav a:hover {
-    color: #ccc;
-}
-
-main {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
+    color: #EBCD01;
 }
 
 #Titulo {
     text-align: center;
 }
 
-#Titulo h1, #Titulo h2 {
+#Titulo h1,
+#Titulo h2 {
     margin-bottom: 15px;
 }
 
@@ -92,7 +87,7 @@ div[style*="text-align: center;"] sub {
     background-color: #fff;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .suporte-container h1 {
@@ -108,7 +103,9 @@ label {
     color: #555;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -117,7 +114,8 @@ input, select, textarea {
     font-size: 14px;
 }
 
-.checkbox-container, .radio-container {
+.checkbox-container,
+.radio-container {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -134,18 +132,22 @@ input, select, textarea {
     margin-bottom: 15px;
 }
 
-button, input[type="submit"], input[type="reset"] {
+button,
+input[type="submit"],
+input[type="reset"] {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background-color: #333;
+    background-color: #2362b4;
     color: white;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-button:hover, input[type="submit"]:hover, input[type="reset"]:hover {
-    background-color: #555;
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #006B06;
     transform: scale(1.05);
 }
 
@@ -153,11 +155,30 @@ button:hover, input[type="submit"]:hover, input[type="reset"]:hover {
     display: block;
     text-align: center;
     margin-top: 10px;
-    color: #333;
+    color: #000;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .voltar-link:hover {
-    color: #555;
+    color: #D71D00;
+}
+
+main {
+    background: linear-gradient(#808080, #f5f5f5);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main>div {
+    background-color: #f5f5f5;
+    width: 100%;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
