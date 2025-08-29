@@ -28,37 +28,7 @@
     width: 180px;
     margin-bottom: 20px;
 }
-
-/* Inputs e botao */
-.TelaLogin {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-}
-
-.TelaLogin input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #dbdbdb;
-    border-radius: 4px;
-    background-color: #fafafa;
-}
-
-.TelaLogin button {
-    background-color: #0095f6;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.TelaLogin button:hover {
-    background-color: #0078cc;
-}
-
+/*aqui ficava imputs e forms*/
 /* Divider (linha OU) */
 .divider {
     display: flex;
@@ -100,7 +70,7 @@
     text-align: center;
     padding: 15px;
     width: 100%;
-    max-width: 380px;
+    max-width: 350px;
 }
 
 #secao-cadastro a {
