@@ -145,4 +145,40 @@
 
 .cadastro-form input[type="file"] {
     display: none;
-  }
+}
+
+/* Botão do upload */
+.custom-file-btn {
+    display: inline-block;
+    width: auto;
+    background-color: #0095f6;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.cadastro-form button {
+    background-color: #0095f6;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Esconde input sem quebrar layout */
+.custom-file-btn input[type="file"] {
+    display: none;
+}
+
+.custom-file-btn:hover {
+    background-color: #0078cc;
+}

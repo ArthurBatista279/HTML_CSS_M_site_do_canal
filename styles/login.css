@@ -1,99 +1,90 @@
-/* CSS da Tela Login feito separadamente*/
-
-/* Container principal */
-#login-main {
+main {
+    background: linear-gradient(var(--cor-1), var(--cor-2), var(--cor-4));
+    min-height: 100vh;
+    width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background-color: #fafafa;
+}
+
+main > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 15px;
 }
 
-/* Caixa do login */
-.login-container {
-    background-color: #fff;
-    border: 1px solid #dbdbdb;
-    padding: 40px 30px;
+form {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 100%;
-    max-width: 350px;
+    gap: 15px;
+    padding: 3%;
 }
 
-/* Logo imagem */
-.logo-img {
-    width: 180px;
-    margin-bottom: 20px;
-}
-/*aqui ficava imputs e forms*/
-/* Divider (linha OU) */
-.divider {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    margin: 20px 0;
+form > p {
+    text-transform: uppercase; 
+    font-size: var(--tamanho-fonte-md);
+    color: var(--cor-cinza-escuro2);
 }
 
-.divider::before,
-.divider::after {
-    content: "";
-    flex: 1;
-    border-bottom: 1px solid #dbdbdb;
-}
-
-.divider:not(:empty)::before {
-    margin-right: .75em;
-}
-.divider:not(:empty)::after {
-    margin-left: .75em;
-}
-
-/* Link de esqueci a senha */
-.forgot-link {
-    font-size: 0.9rem;
-    color: #0095f6;
+form > a {
+    color: var(--cor-3);
+    font-size: var(--tamanho-fonte-sm);
     text-decoration: none;
 }
 
-.forgot-link:hover {
-    text-decoration: underline;
+section > p > a {
+    color: var(--cor-3);
+    text-decoration: none;
 }
 
-/* Caixa de cadastro */
 #secao-cadastro {
-    background-color: #fff;
-    border: 1px solid #dbdbdb;
-    text-align: center;
-    padding: 15px;
-    width: 100%;
-    max-width: 350px;
-}
-
-#secao-cadastro a {
-    color: #0095f6;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-#secao-cadastro a:hover {
-    text-decoration: underline;
-}
-
-/* Texto de aplicativo */
-.app-text {
-    margin-top: 10px;
-    font-size: 0.9rem;
-    color: #555;
-}
-
-/* Secao instalacao */
-#secao-instalacao {
     display: flex;
     justify-content: center;
+    align-items: center;
+    font-size: var(--tamanho-fonte-sm);
+    height: 60px;
+    color: var(--cor-4);
+}
+
+.estilo-formulario {
+    width: 100%;
+    max-width: 342px;
+    background-color: var(--cor-cinza-escuro4);
+    border: var(--borda);
+}
+
+#secao-instalacao {
+    display: flex; 
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
-    margin-top: 10px;
+}
+
+.formulario-campos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}
+
+.formulario-botao-verde {
+    width: 100%;
+}
+
+.formulario-campos > input {
+    height: 25px;
+    color: var(--cor-2);
+    background-color: var(--cor-cinza-escuro4);
+    border-radius: var(--borda-arredondada);
+    border: var(--borda);
+}
+
+main > div > p {
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-4);
 }
