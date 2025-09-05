@@ -31,14 +31,13 @@ form > p {
 }
 
 form > a {
-    color: var(--cor-3);
+    color: #000dff;
     font-size: var(--tamanho-fonte-sm);
-    text-decoration: none;
+   
 }
 
 section > p > a {
-    color: var(--cor-3);
-    text-decoration: none;
+    color: #000dff;
 }
 
 #secao-cadastro {
@@ -72,8 +71,16 @@ section > p > a {
     gap: 5px;
 }
 
-.formulario-botao-verde {
-    width: 100%;
+.formulario-botao {
+    background-color: #0095f6;
+    color: #fff;
+    border: none;
+    padding: 8px 60px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    
 }
 
 .formulario-campos > input {
